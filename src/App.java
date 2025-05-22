@@ -13,9 +13,17 @@ public class App {
             // Solicitado o tamanho das listas
             System.out.print("Digite o tamanho da lista 1: ");
             int tamanhoLista1 = input.nextInt();
+            if (tamanhoLista1 <= 0) {
+                System.out.println("Digite um valor válido para o tamanho da lista 1!");
+                return;
+            }
             
             System.out.print("Digite o tamanho da lista 2: ");
             int tamanhoLista2 = input.nextInt();
+                if (tamanhoLista2 <= 0) {
+                System.out.println("Digite um valor válido para o tamanho da lista 2!");
+                return;
+            }
             
             // Populando as listas com números aleatórios
             for (int i = 0; i < tamanhoLista1; i++) {
